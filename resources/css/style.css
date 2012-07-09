@@ -154,17 +154,108 @@ nav a:hover{
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Luan fonseca
    ========================================================================== */
 
+label {
+	cursor: pointer;
+	display: block;
+	font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	margin: 0 0 5px;
+}
 
+input, textarea, select {
+	-webkit-appearance: none; /* Fix for Mobile Safari */
+	background-color: #f8f8f8;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+	color: #8f8f8f;
+	padding: 5px 10px;
+	border-radius: 0;
+}
 
+input, select{
+	height: 30px;
+	width: 200px;
+}
 
+textarea {
+    padding: 10px;
+    resize: both;
+}
 
+input:hover, textarea:hover, select:hover { border-color: #dedede; }
 
+input:focus, textarea:focus, select:focus { border-color: #ccc; }
 
+input[type="submit"], button {
+    -moz-transition: background-color 0.2s ease 0s;
+    background: none repeat scroll 0 0 #F15A23;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 400;
+    height: auto;
+    overflow: visible;
+    padding: 7px 20px;
+    color: #fff !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #E44D26;
+    margin: 0 0 20px;
+    width: auto;
+}
 
+input[type="submit"]:hover, button:hover {
+    background: none repeat scroll 0 0 #3A3A3A;
+    color: #FFFFFF;
+}
 
+input[type="submit"].medium, button.medium { font-size: 15px; }
+
+input[type="submit"].large, button.large { font-size: 17px; }
+
+select, option {
+	cursor: pointer;
+	padding: 5px 7px;
+}
+
+input.responsive-input.big, 
+select.responsive-input.big, 
+textarea.responsive-input.big{ width: 95%; }
+
+input.responsive-input.medium, 
+select.responsive-input.medium, 
+textarea.responsive-input.medium{
+    width: 80%;
+}
+
+input.responsive-input.small, 
+select.responsive-input.small, 
+textarea.responsive-input.small{
+    width: 60%;
+}
+
+input.responsive-input.tiny, 
+select.responsive-input.tiny, 
+textarea.responsive-input.tiny{
+    width: 40%;
+}
+
+textarea.vertical{ resize:vertical; }
+
+.errorlist{
+    color: red;
+    float: right;
+    list-style: none outside none;
+}
+
+.errorfield, .errorfield:hover, .errorfield:focus{ background-color: #F0DDDD; }
 
 
 /* =============================================================================
